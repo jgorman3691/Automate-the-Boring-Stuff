@@ -1,0 +1,33 @@
+Current Startup:
+
+1: Imports: random, pickle
+
+2: Seed RNG
+Functions:
+
+Quiz Creation Prep
+
+1: CreateTrack - Creates a boolean list that tracks which states have been chosen.  Returns Boolean List
+2: dictLoad - Loads the dictionary from the sandc file and copies it to the program.  Returns Nested dictionary
+3: randomWrong - Uses the RNG to create three unique numbers, index is cut out.  Returns 3 integers, [0,49]
+4: Options - Loads the correct state/capital combination, as well as three other capitals.  Returns a size 5 list
+
+Quiz Creation
+
+Before file loop, create two files, the answer key and the quiz proper.  These will be the master list.
+
+Start Loop
+
+Keep it simple.  Just go through prist from 0 to 49 for each state.
+
+
+1: Query - Removes the first item from the list pop(0), leaves the remaining answers, size 4 List
+#  2: Shuffle - Shuffles the order of the capitals.
+3: Loop - Loop a massive block of code 50 fucking times, using prist[i] to choose the state
+
+While in Loop:
+
+1: Question: Print Statements for Question
+2: Answer Key: dict{key = question number, value = correct answer}
+
+DONE

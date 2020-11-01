@@ -1,0 +1,47 @@
+#  Notes to Organize Thoughts:
+#
+#  1.) Need a dictionary of States and Capitals
+#  Nah states = {'state': 'whatever'}
+#  Nah capitals = {'capital': 'whatever'}
+#  sclist = {"state": "capital"}
+#  pasked = {}
+#  for i in len(sclist):
+#    pasked = {i:True for i in len(sclist)}
+#
+#  2.) Need a function that creates a multiple choice question (Choosing 4 total)
+#    Function (values)
+#    while (pasked.value(i) == False):
+#      i = randrange[50]
+Created 3 functions.  The first creates three unique, random numbers that don't have a hash collision with the
+Function 
+    Function()
+3.) Need a function that scrambles the answers
+    function inc:
+      a, b, c = i
+      while(a == b or b == c or c == a):
+        a = randrange[50]
+        b = randrange[50]
+        c = randrange[50]
+3.) Function adds correct Key, Value pair to answer key
+4.) Need a function that repeats this 50 times
+5.) Need a function that creates 50 choose 35 total copies, and gives each one a unique signifier
+.) Function creates answer key to each quiz based on the state
+6.) Need a function that scrambles question order
+
+1:
+  A: Dictionary has key-value pairs corresponsing to the state and its proper Capitals
+  B: Dictionary has key-value pairs corresponsing to which is the state and which is the Capitals
+  C: Can call both state/capital pair, or can drop the state part for the other three answers
+  D: Create a list with size 50, used or unused
+
+2:
+  A: Function pulls up MC Question template
+  B: Function creates a random number until it hits an unused state in the list, then creates three more.
+  C: Function Dereferences State and Capital from Chosen Index, saves index number
+  D: Function dereferences Capitals at the three random numbers
+  E: Function passes list, with state index, and three capital indices.
+  F: Function updates list, adds state index to "Used"
+  G: Function clears random numbers, 
+
+3:
+  A:
