@@ -1,5 +1,5 @@
 {
-  "python.pythonPath": "C:\\ProgramData\\Miniconda3\\envs\\exp\\python.exe",
+  "python.pythonPath": "C:\\ProgramData\\Anaconda3\\envs\\hello-tf\\python.exe",
   "editor.tabSize": 2,
   "pythonIndent.useTabOnHangingIndent": true,
   "prettier.tabWidth": 2,
