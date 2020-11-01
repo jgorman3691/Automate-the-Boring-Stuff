@@ -1,0 +1,49 @@
+Multiclipboard
+
+1.) Clipboard Properties
+  a: Can only hold one piece/string/item of text
+  b: Saves each individual item of text under a keyword
+  c: Takes an argument along with (after) program activation
+  d: File name is mcb.pyw, format would be: py mcb.pyw [keyword]
+  e. Lastly, the argument "list" copies a list of all the keywords to the clipboard
+
+Idea: Basically we have a shelf file with a bunch of text blobs that are identified by their keywords.  Every time we run the program with a keyword, a blob with that identifier gets pulled up into the clipboard.
+      If we forget the identifiers, we can use the "list" argument, which will return the list of keywords.
+
+Note: The Use of a shelf is highly encouraged, as is sys.argv, so import sys, and import shelve!
+
+Functions:
+
+Read value from CLI
+
+Open Shelf
+
+Search for appropriate Blob
+
+Clear then Copy Blob to Clipboard
+
+Creates a list of keywords to call
+
+Extra: Print keyword: Glob
+
+Function Skeletons:
+
+ReadCLI (Steps to take)
+   Read and save the shelf
+    a Create the shelf
+    b can treat as a dict (s = shelf, s['keyword] : [text_info'])
+   Reads the arguments
+   Passes the values: Control Split
+    1: if argument is save, then save clipboard contens to keyword blob
+    2.: If argument is list, print out the names of all the blobs.
+    3: Otherwise, keyword's text blob loaded to clipboard
+
+Note: All these values are in the shelve module!!!
+
+1.) Create Shelf:
+
+import shelve
+shelfFile = shelve.open('project')
+example = ['Blah', 'Weird but popular porn', 'my mudic collection']
+shelfFile['example'] = example
+ShelfFile.close()
