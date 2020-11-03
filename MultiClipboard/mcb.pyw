@@ -30,6 +30,10 @@ def ReadCLI():
         ModifyShelf('save', 'sys.argv[2]')
     elif(sys.argv[1] == 'list'):
         ModifyShelf('list', 'sys.argv[1]')
+    elif((sys.argv[1] == 'delete') and (len(sys.argv) >= 3)):
+        ModifyShelf('delete', 'sys.argv[2]')
+    elif((sys.argv[1] == 'delete') and (len(sys.argv) < 3)):
+        ModifyShelf('delete', 'full')
     else:
         ModifyShelf('change', 'sys.argv[1]')
 
@@ -38,8 +42,16 @@ def ModifyShelf(reason, argument):
     with shelve.open('mcb' 'at') as choice:
         if(reason == 'save'):
             choice.write[argument][sys.argv]
-        if(reason == 'list'):
+        elif(reason == 'list'):
             for i,0 in enumerate(clipboardRead(i,0)):
                 print (clipboardRead[i][0])
-        if(reason == 'change'):
+        elif(reason == 'change'):
             choice.write[sys.argv[1]][sys.argv]
+        elif((reason == 'delete') and (len(sys.argv >= 3))):
+            del choice['argument']
+        elif((reason == 'delete') and (argument == 'full')):
+            for shiva in range(0, max(choice[:][:])):
+                del choice[shiva][:]
+        else:
+            print('Yay file handling and storage?  I can see that this is a set of bricks with which I will build something awesome, but it doesn\'t take away the feeling of being in kindergarten...::sadface::')
+ReadCLI()
