@@ -10,6 +10,10 @@
     "editor.tabSize": 2,
   },
   "cSpell.words": [
-    "numpy"
+    "Elems",
+    "Sweigert",
+    "lxml",
+    "numpy",
+    "xkcd"
   ]
 }
