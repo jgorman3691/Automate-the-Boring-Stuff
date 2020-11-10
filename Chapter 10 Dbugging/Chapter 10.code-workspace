@@ -1,0 +1,11 @@
+{
+    "folders": [
+		{
+			"path": ".."
+		}
+	],
+    "settings": {
+        "pythonIndent.useTabOnHangingIndent": false,
+        "python.pythonPath": "C:\\Users\\jedgo\\.conda\\envs\\fun\\python.exe",
+    }
+}

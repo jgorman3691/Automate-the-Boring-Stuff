@@ -1,7 +1,15 @@
 {
-  "python.pythonPath": "C:\\ProgramData\\Anaconda3\\envs\\hello-tf\\python.exe",
+  "python.pythonPath": "C:\\ProgramData\\Miniconda3\\envs\\exp\\python.exe",
   "editor.tabSize": 2,
   "pythonIndent.useTabOnHangingIndent": true,
   "prettier.tabWidth": 2,
-  "editor.stablePeek": true
+  "editor.stablePeek": true,
+
+  "[python]": {
+    "editor.insertSpaces": true,
+    "editor.tabSize": 2,
+  },
+  "cSpell.words": [
+    "numpy"
+  ]
 }
