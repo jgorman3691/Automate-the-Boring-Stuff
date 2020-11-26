@@ -1,5 +1,5 @@
 {
-  "python.pythonPath": "C:\\ProgramData\\Miniconda3\\envs\\exp\\python.exe",
+  "python.pythonPath": "C:\\ProgramData\\Miniconda3\\envs\\burn\\python.exe",
   "editor.tabSize": 2,
   "pythonIndent.useTabOnHangingIndent": true,
   "prettier.tabWidth": 2,
@@ -14,6 +14,9 @@
     "Sweigert",
     "lxml",
     "numpy",
+    "openpyxl",
+    "pformat",
     "xkcd"
-  ]
+  ],
+  "python.formatting.provider": "yapf"
 }
